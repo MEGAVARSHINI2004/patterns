@@ -1,0 +1,103 @@
+for var in 'Iterable':
+    print(var)
+
+n=5
+for i in range(1,n+1):
+    print("*",i)
+#pattern generation:
+n=5
+for i in range(1,n+1):
+     print("* "*i)
+
+n=5
+for i in range(1,n+1):
+    print(((n+1)-i)*" *")
+
+n=5
+for i in range(1,n+1):
+    print(" "*(n-i),"* "*i)
+#number generation:
+n=5
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+##basic:
+for i in "APPLE":  #i--> variable
+    print(i)
+#three
+for i in range(1,11):
+    print(i,"*3=",i*3)
+#print even numbers from 1 to 10
+for i in range(1,11):
+    if(i%2==0):
+        print(i)
+###counting even numbers fron 1 to 11:
+count=0
+for i in range(1,11):
+    if(i%2==0):
+        count+=1
+print(count)
+###count of odd &even numbers count from 1to11
+c=0
+k=0
+for i in range(1,12):
+    if(i%2==0):
+        c+=1
+    else:
+        k+=1
+print("even:",c)
+print("odd:",k)
+#for counting numbers divisible by 3&5 fron 1 to 100
+count=0
+for i in range(1,101):
+    if((i%3==0)and(i%5==0)):
+        count+=1
+print(count)
+#to find cube foe entered numbers
+a=[]
+print("Enter 5 numbers:")
+for i in range(1,6):
+    b=int(input("enter number "+str(i))) # casting takes place here
+    a.append(b)
+print(a)
+for i in a:
+    print("cubes are"+str(i),i*i*i)
+
+##Example
+for i in range(1,3):
+    print("week",i)
+    for j in range(1,4):
+        print("day:",j)
+#Example2
+for i in range(1,6):
+    print('*'*i)
+#Example3
+for i in range(1,7):
+    for j in range(i-1,i+1):
+        print(j,end="")
+    print()
+###diamond pattern
+for i in range(1,5):
+    print(" "*int(5-i),"* "*i)
+for i in range(1,5):
+     print(" "*i,"* "*int(5-i))
+#Example4
+k=1
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(k,end=" ")
+        k+=1
+    print()
+#Example5
+i=0
+k=1
+while(i<=4):
+    j=0
+    while(j<=i):
+        print(k,end=" ")
+        k+=1
+        j+=1
+    print()
+    i+=1
+    
