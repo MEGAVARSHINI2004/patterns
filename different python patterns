@@ -1,0 +1,34 @@
+#basic
+for i in range(1,6):
+    print("*",i)
+    
+#diamond pattern
+for i in range(1,5):
+    print(" "*int(5-i),"* "*i)
+for i in range(1,5):
+    print(" "*i,"* "*int(5-i))
+
+#reversed equilateral triangle
+for i in range(1,5):
+    print(" "*i,"* "*int(5-i))
+
+#right angle triangle
+for i in range(1,6):
+    print('* '*i)
+
+#inverted right angle triangle
+for i in range(1,6):
+    print((6-i)*" ")
+
+#equilateral triangle
+n=5
+for i in range(1,n+1):
+    print(" "*(n-i),"* "*i)
+
+#opposite right angle triangle
+for i in range(1,6):
+    print(" "*(6-i),"*"*i)
+
+#inverted opposite right angle triangle
+for i in range(1,6):
+    print(" "*i,"*"*(6-i))
